@@ -89,6 +89,10 @@ function draw() {
   }
 
   
+  if (keyDown(RIGHT_ARROW)){
+	helicopterSprite.x=helicopterSprite.x=-20;
+  Matter.Body.translate(packageBody, {x:20,y:0})
+  }
   drawSprites();
 
  
